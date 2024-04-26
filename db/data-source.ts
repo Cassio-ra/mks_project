@@ -3,8 +3,8 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 export const dataSourceOptions: DataSourceOptions = {
   type: 'postgres',
   host: 'localhost',
-  username: 'postgres',
-  password: 'root',
+  username: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
   database: 'mks',
   entities: ['dist/**/*.entity.js'],
   migrations: ['dist/db/migrations/*.js'],
