@@ -12,6 +12,7 @@ $ npm run build
 ```
 
 ## Rodar as migrações
+Necessária a configuração da .env para a conexão com o banco de dados
 ```bash
 # development
 $ typeorm -d dist/db/data-source.js migration:run
